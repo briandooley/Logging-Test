@@ -1,6 +1,4 @@
-timelog = function(message) {
-	console.log(new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + ' UTC -- ' + message);
-}
+var logger = require('./logger');
 
 timelog('Everything started properly.');
 timelog('Running out of memory...');
